@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-padding-top: 90px;
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 87%;
+    display: flex;
+    background-color: black;
+    padding: 20px 100px;
+    /* align-items: center; */
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Ubuntu', sans-serif ;
+    transition: 0.4s;
+}
+header.sticky{
+    background-color: white;
+    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .logo{
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: black;
+}
+.items ul{
+    position: relative;
+    display: flex;
+
+}
+.items ul li{
+    position: relative;
+    list-style: none;
+}
+.items ul a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: 1.2rem;
+}
+header.sticky .items ul a{
+    color: black;
+}
+
+/* banner */
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading {
+    padding-left: 100px;
+    max-width: 100%;
+    color: white;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 2.0rem;
+    /* line-height: 1.2rem; */
+    letter-spacing: 3px;
+}
+.heading span{
+    font-weight: 600;
+    font-size: 4.70rem;
+    letter-spacing: 8px;
+}
+.btn{
+    position: relative;
+    background-color: transparent;
+    max-width: 140px;
+    padding: 6px;
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 20px;
+    border: 2px solid white;
+    transition-duration: 0.7s;
+    /* text-transform: uppercase; */
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* About */
+
+
+.about{
+    position: relative;
+    
+}
+.about h2{
+    position: relative;
+    color: black;
+    font-size: 2.5rem;
+    margin: 40px;
+}
+.container{
+    position: relative;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    position: relative;
+    padding: 0px 5px;
+}
+.content p{
+    position: relative;
+    font-size: 1.3rem;
+}
+.content h3{
+    position: relative;
+    color: black;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    font-family:'Ubuntu', sans-serif;
+}
+.image{
+    position: relative;
+    padding-top: 10px;
+}
+.image img{
+    position: relative;
+    width: 100%;
+}
+.w45{
+    width: 48%;
+}
+.center{
+    text-align: center;
+}
+/* Services */
+
+.services{
+    background-color: black;
+    
+}
+.services .heading{
+    padding: 40px 0px;
+    letter-spacing: 0px;
+}
+.services .container{
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.servicebox{
+    /* border: 2px solid red; */
+    color: white;
+    width: 29.9%;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 10px 10px;
+    background-color: #212121d6;
+    font-family:'Ubuntu', sans-serif;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.servicebox h3{
+    padding: 10px 0px;
+}
+.servicebox img{
+    filter: invert();
+}
+.services .container .servicebox:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+/* work */
+.black{
+    color: black;
+}
+.work .heading{
+    padding: 40px 0px;
+    letter-spacing: 0px;
+}
+.work .container{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work .btn{
+    border: 2px solid black;
+    color: black;
+    margin-left:0px;
+}
+.work .btn:hover{
+    background-color: black;
+    color: white;
+    margin-left:0px;
+}
+.workbox{
+    margin: 20px;
+    max-width: 45%;
+}
+.workbox img{
+    width: 100%;
+}
+
+
+/* testimonial */
+.testimonial .heading{
+    color: black;
+    padding: 40px 0px;
+    letter-spacing: 0px;
+}
+.testimonial .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonial{
+    background-color: #F5F5F5;
+}
+.testbox{
+    background-color: #C9DAEA;
+    padding: 5px;
+    color: black;
+    max-width: 46% ;
+    margin: 0px 15px;
+}
+.testbox p{
+    font-size: 1rem;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
+.testbox h3{
+    padding: 10px;
+    text-align: end;
+    font-size: 1.3rem;
+    font-family:'Roboto Slab', serif;
+    font-weight: 800;
+}
+.testbox h3 span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* Contact */
+.contact{
+    background-color: #111;
+    font-family:'Ubuntu', sans-serif ;
+}
+.contact .heading{
+    padding: 40px 0px;
+    letter-spacing: 0px;
+}
+
+.contact .container .contactinfo{
+    /* border: 2px solid red; */
+    position: relative;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.conh{
+    /* text-align: center; */
+    font-size: 2rem;
+    color: white;
+}
+.contact .container .contactinfo .box{
+    /* border: 2px solid red; */
+    position: relative;
+    display: flex;
+    padding: 10px 0px;
+    margin-left: 10px;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+}
+.contact .container .contactinfo .box .icon{
+    padding-right:20px;
+    color: white;
+    min-width: 40px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .container .contactinfo .box .text{
+    font-weight: 300;
+}
+.contact .container .formbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    
+}
+.contact .container .formbox form{
+    /* border: 2px solid red; */
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contact .container .formbox form input,
+.contact .container .formbox form textarea{
+    border: 1px solid white;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.contact .container .formbox form .btn{
+    position: relative;
+    border: 2px solid white;
+    margin: 0px;
+    cursor: pointer;
+    color: white;
+}
+.contact .container .formbox form .btn:hover{
+    
+    background-color: white;
+    color: black;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Responsive */

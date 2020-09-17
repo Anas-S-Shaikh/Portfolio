@@ -1,0 +1,203 @@
+/* responsive */
+
+
+header,header.sticky{
+    padding: 20px 30px;
+    
+    z-index: 1000;
+}
+.items .menu{
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    padding: 100px 0px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: white;
+    transition: 0.5s;
+}
+.items .menu.active{
+    left: 0%;
+}
+.items .menu li a{
+    color: black;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 550;
+}
+.items .menu li{
+    margin: 10px;
+}
+.toggle{
+    width: 40px;
+    height: 40px;
+    background-image: url("menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.toggle.active{
+    width: 40px;
+    height: 40px;
+    background-image: url("close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+header.sticky .toggle{
+    filter: invert();
+}
+
+/* banner */
+.heading{
+    padding-left: 30px;
+    font-size: 1rem;
+}
+.heading span {
+    font-weight: 600;
+    font-size: 2.7rem;
+    letter-spacing: 4px;
+}
+.btn {
+    position: relative;
+    background-color: transparent;
+    max-width: 72px;
+    padding: 6px;
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 2px solid white;
+    transition-duration: 0.7s;
+    /* text-transform: uppercase; */
+}
+.container{
+    position: relative;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about h2 {
+    font-size: 2.0rem;
+    margin: 10px;
+    padding: 0%;
+}
+.content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    
+}
+.content p{
+    font-size: 1rem;
+    text-align: justify;
+}
+.image {
+
+    padding-top: 20px;
+}
+.w45{
+    width: 100%;
+}
+
+/* service */
+.services .heading,.work .heading,.testimonial .heading,.contact .heading{
+    padding: 10px 30px;
+    letter-spacing: 0px;
+    padding-bottom: 0px;
+}
+.services .heading h3,.work .heading h3,.testimonial .heading h3,.contact .heading h3{
+    font-size: 1.5rem;
+}
+.services .heading p,.work .heading p,.testimonial .heading p,.contact .heading p{
+    font-size: 0.779rem;
+}
+.servicebox{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 5px;
+}
+.servicebox h3{
+    padding: 5px 0px;
+    font-size: 1rem;
+}
+.servicebox p,.testbox p{
+    font-size: 0.779rem;
+}
+.workbox{
+    max-width: 100%;
+}
+.work .container{
+    align-items: center;
+}
+.testbox {
+    background-color: #C9DAEA;
+    padding: 5px;
+    color: black;
+    max-width: 100%;
+    margin: 10px 5px;
+}
+.testbox h3 {
+    padding: 4px;
+    text-align: end;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+}
+.testbox h3 span{
+    font-size: 0.85rem;
+}
+.conh {
+    /* text-align: center; */
+    font-size: 1rem;
+    color: white;
+}
+.box {
+    /* border: 2px solid red; */
+    position: relative;
+    display: flex;
+    padding: 5px 0px;
+    /* margin-left: 5px; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+}
+.contact .container .contactinfo .box .text h3{
+    font-size: 1rem;
+}
+.contact .container .contactinfo .box .text p{
+    font-size: 0.779rem;
+}
+.contact .container .contactinfo .box .icon{
+    padding-right: 10px;
+    min-width: 10px;
+}
+.contact .container .formbox form input, .contact .container .formbox form textarea {
+    border: 1px solid white;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 6px;
+    font-size: 10px;
+    resize: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 5px;
+}

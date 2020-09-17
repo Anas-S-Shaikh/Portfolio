@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Responsive portfolio website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">#
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="phone.css">
+    <script src="https://kit.fontawesome.com/8a2c3e47ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">portfolio</a>
+        <div class="toggle" onclick="toggle();"></div>
+        <div class="items">
+            <ul class="menu">
+                <li><a href="#home" onclick="toggle();">Home</a></li>
+                <li><a href="#about" onclick="toggle();">About</a></li>
+                <li><a href="#services" onclick="toggle();">Services</a></li>
+                <li><a href="#work" onclick="toggle();">Work</a></li>
+                <li><a href="#testimonial" onclick="toggle();">Testimonial</a></li>
+                <li><a href="#contact" onclick="toggle();">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner" id="home">
+        <div class="heading">
+            <h2>Hey, I'm<br><span>Anas Shaikh</span></h2>
+            <h3>Welcome to my portfolio</h3>
+
+        </div>
+        <a href="#about" class="btn">About Me</a>
+    </section>
+    <section class="about" id="about">
+        <h2 class="heading center">About Me</h2>
+        <div class="container">
+            <div class="content w45">
+                <h3>
+                    Introduction of myself
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati saepe magnam eligendi ab
+                    aliquid cum hic deserunt doloribus at illo, consequatur porro omnis veritatis soluta ex fugiat quod,
+                    quo, similique dolorum. Itaque nobis error illum, quae dolor dolore. Earum!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati saepe magnam eligendi ab
+                    aliquid cum hic deserunt doloribus at illo, consequatur porro omnis veritatis soluta ex fugiat quod,
+                    quo, similique dolorum. Itaque nobis error illum, quae dolor dolore. Earum!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati saepe magnam eligendi ab
+                    aliquid cum hic deserunt doloribus at illo, consequatur porro omnis veritatis soluta ex fugiat quod,
+                    quo, similique dolorum.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati saepe magnam eligendi ab
+                    aliquid cum hic deserunt doloribus at illo, consequatur porro omnis veritatis soluta ex fugiat quod,
+                    quo, similique dolorum.</p>
+
+            </div>
+            <div class="image w45">
+                <img src="about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading center">
+            <h3>Our Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container">
+            <div class="servicebox">
+                <img src="icon1.png" alt="">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos consequatur ex natus, unde
+                    quo id. Ipsum, eum, dolor non vero dicta sunt veritatis perspiciatis architecto omnis asperiores
+                    doloribus quod.</p>
+            </div>
+            <div class="servicebox">
+                <img src="icon2.png" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos consequatur ex natus, unde
+                    quo id. Ipsum, eum, dolor non vero dicta sunt veritatis perspiciatis architecto omnis asperiores
+                    doloribus quod.</p>
+            </div>
+            <div class="servicebox">
+                <img src="icon3.png" alt="">
+                <h3>Android</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos consequatur ex natus, unde
+                    quo id. Ipsum, eum, dolor non vero dicta sunt veritatis perspiciatis architecto omnis asperiores
+                    doloribus quod.</p>
+            </div>
+            <div class="servicebox">
+                <img src="icon4.png" alt="">
+                <h3>Photography</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos consequatur ex natus, unde
+                    quo id. Ipsum, eum, dolor non vero dicta sunt veritatis perspiciatis architecto omnis asperiores
+                    doloribus quod.</p>
+            </div>
+            <div class="servicebox">
+                <img src="icon5.png" alt="">
+                <h3>Content Writing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos consequatur ex natus, unde
+                    quo id. Ipsum, eum, dolor non vero dicta sunt veritatis perspiciatis architecto omnis asperiores
+                    doloribus quod.</p>
+            </div>
+            <div class="servicebox">
+                <img src="icon6.png" alt="">
+                <h3>Video Editing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos consequatur ex natus, unde
+                    quo id. Ipsum, eum, dolor non vero dicta sunt veritatis perspiciatis architecto omnis asperiores
+                    doloribus quod.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="work" id="work">
+        <div class="heading center black">
+            <h3>Our Latest Work</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container">
+            <div class="workbox">
+                <img src="product1.jpg" alt="">
+            </div>
+            <div class="workbox">
+                <img src="product2.jpg" alt="">
+            </div>
+            <div class="workbox">
+                <img src="product3.jpg" alt="">
+            </div>
+            <div class="workbox">
+                <img src="product4.jpg" alt="">
+            </div>
+            <div class="heading">
+                <a href="#" class="btn">View More</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial" id="testimonial">
+        <div class="heading center">
+            <h3>Testimonial</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container">
+            <div class="testbox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto ab repudiandae assumenda
+                    voluptatibus delectus officia architecto, quis tenetur minus. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Doloremque aperiam dignissimos aspernatur dolorum. Inventore, culpa? Sint nobis, ullam
+                    error quaerat eveniet impedit ratione ipsam excepturi cupiditate asperiores veritatis illum doloribus?
+                </p>
+                <h3>Someone Specials <br><span>Someone Special</span></h3>
+            </div>
+            <div class="testbox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto ab repudiandae assumenda
+                    voluptatibus delectus officia architecto, quis tenetur minus. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Doloremque aperiam dignissimos aspernatur dolorum. Inventore, culpa? Sint nobis, ullam
+                    error quaerat eveniet impedit ratione ipsam excepturi cupiditate asperiores veritatis illum doloribus?
+                </p>
+                <h3>Someone Specials <br><span>Someone Special</span></h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading center">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <h2 class="conh">Contact Info</h2>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>A3,prince duplex,<br>opposite Vishala hotel <br>Ahmedabad,380055</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 8485914438</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>anasshaikh3343@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formbox">
+                <h2 class="conh">Message me..</h2>
+                <form>
+                    <input type="text" placeholder="Enter your fullname">
+                    <input type="email" placeholder="Enter your email">
+                    <textarea placeholder="Your message"></textarea>
+                    <input type="submit" class="btn" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+
+        Copyright &copy; Anas Shaikh. All right Reserved.
+    </div>
+    
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        function toggle() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');       
+        }
+    </script>
+</body>
+
+</html>
